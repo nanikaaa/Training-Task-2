@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Mirai School</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="./stylesheet.css">
     <!-- Adobe Font Integration -->
     <script> (function(d) { var config = { kitId: 'hyt8snp', scriptTimeout: 3000, async: true }, h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s) })(document); </script>
@@ -23,7 +24,6 @@
         <div class="text-overlay">
             <h1>ミライスクールについて</h1>
         </div>     
-
     </section>
 
     <section class="second-section">
@@ -57,7 +57,7 @@
         <div class="third-container">
             <div class="third-content">
                 <div class="third-image">
-                    <img src="./images/third-content.jpg">
+                    <img src="./images/third-content.jpg" alt="Children learning with a teacher" title="Children learning with a teacher">
                 </div>
                 <div class="third-text ">
                     <h3>専門職による療育を提供</h3>
@@ -81,7 +81,7 @@
         <div class="fourth-container">
             <div class="fourth-content">
                 <div class="fourth-image">
-                    <img src="./images/fourth-content.jpg">
+                    <img src="./images/fourth-content.jpg" alt="Children engaging in activities" title="Children engaging in activities">
                 </div>
                 <div class="fourth-text">
                     <h3>個別支援計画のご提案と計画書作成のお手伝い</h3>
@@ -112,9 +112,9 @@
                 </button>
             </div>
         </div>
-        </section>
+    </section>
     
-        <footer class="footer-section">
+    <footer class="footer-section">
         <div class="footer-container">
                 <div class="footer-logo-bg">
                     <img src="./images/logo-no-bg.png" alt="MiraiSchool Logo"  onclick="location.href='./index.html'">
@@ -131,16 +131,35 @@
                 <a href="./privacy.html">プライバシーポリシー</a>
             </div>
         </div>
-        </footer>
+    </footer>
     
-<script>
-    fetch("./navbar.html") 
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById("navbar-container").innerHTML = data;
-            loadNavbarScripts();
-        });
-</script>
-    <script src="../navbar.js"></script>
+    <script>
+        fetch("./navbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar-container").innerHTML = data;
+                loadNavbarScripts();
+            });
+        
+        function loadNavbarScripts() {
+            const menu = document.getElementById("mobile-menu");
+            const hamburger = document.querySelector(".hamburger");
+            const closeBtn = document.querySelector(".close-btn");
+        
+             function toggleMenu() {
+                menu.classList.toggle("active");
+            }
+        
+            if (hamburger) {
+                hamburger.addEventListener("click", toggleMenu);
+            }
+        
+            if (closeBtn) {
+                closeBtn.addEventListener("click", toggleMenu);
+            }
+        }
+    </script>
+    
+    <script src="./navbar.js"></script>
 </body>
 </html>

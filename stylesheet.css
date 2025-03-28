@@ -877,7 +877,7 @@ button {
 }
 
 .second-image img, .fourth-image img {
-    max-width: 100%;
+    width: 100%;
     width: 50vw;         
     border-radius: 20px;
     overflow: hidden;
@@ -886,7 +886,7 @@ button {
 }
 
 .third-image img {
-    max-width: 100%;
+    width: 100%;
     width: 50vw;         /* Maintain the desired size */
     border-radius: 20px;
     overflow: hidden;
@@ -927,6 +927,7 @@ button {
     letter-spacing: 2px;
 }
 
+/* Philosophy Page styling */
 .main-visual {
     max-width: 1440px;   
     width: 100%;         
@@ -1013,8 +1014,7 @@ button {
         margin-bottom: 80px; 
     }
 
-    .first-content {
-        max-width: 1440px;   
+    .first-content {  
         width: 100%;         
         margin: 0 auto;             
         overflow: hidden;
@@ -1024,7 +1024,6 @@ button {
     }
     
     .first-image-container img {
-        width: 90%;          
         height: auto;
         object-fit: cover;
         border-radius: 20px;
@@ -1032,12 +1031,32 @@ button {
         margin-right: -20px;
     }
     
-    /* Text Overlay Styling */
     .text-overlay {
         font-size: 1.5rem;
         border-radius: 8px;
-        margin: 130px 300px 0 -200px;
+        margin: 150px 300px 0 -300px;
         letter-spacing: 4px;
+    }
+
+    .first-text p, .second-text p, .third-text p, .fourth-text p {
+        font-size: 1.2rem;
+        line-height: 2;
+        color: #5F4328;
+        padding-bottom: 10px;
+        font-weight: 400;
+        letter-spacing: 2px;
+    }
+
+    .third-image {
+        margin-right: -20px;
+    }
+
+    .third-text {
+        padding-left: 60px;
+    }
+
+    .fourth-text {
+        padding-right: 50px;
     }
 
     .second-header h2 {
@@ -1052,7 +1071,16 @@ button {
     .second-text h3, .third-text h3, .fourth-text h3{
         font-size: 1.75rem;
         color: #EA5413;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
+    }
+
+    .second-text p, .third-text p, .fourth-text p {
+        font-size: 1rem;
+        line-height: 1.75;
+        color: #5F4328;
+        padding-bottom: 10px;
+        font-weight: 400;
+        letter-spacing: 2px;
     }
 
     .btn-contact, .btn-contact-section {
@@ -1504,6 +1532,44 @@ button {
         padding-right: 40px;
         position: relative;
     }
+
+    .first-image-container {
+        padding-left: 15%;
+    }
+
+    .second-header {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .second-header h2 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .second-content, .third-content, .fourth-content {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .text-overlay {
+        margin: 130px 100px 0 -250px;
+        font-size: 1.4rem;
+    }
+
+    .second-text {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .third-text {
+        padding-left: 50px;
+        padding-right: 30px;
+    }
+
+    .fourth-text {
+        padding-right: 50px;
+        padding-left: 20px;
+    }
 }
 
 @media screen and (max-width: 1014px) {
@@ -1515,7 +1581,7 @@ button {
 @media screen and (max-width: 980px){
     .btn-contact, .btn-contact-section {
         padding: 10px 10px;
-        width: 110px;
+        width: 130px;
         height: 22px;
         font-size: 12px;
     }
@@ -1535,6 +1601,63 @@ button {
         height: auto;
     }
 
+    .first-image-container {
+        padding-left: 10%;
+    }
+
+    .second-header {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .second-header h2 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .second-content, .third-content, .fourth-content {
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+
+    .second-text h3, .third-text h3, .fourth-text h3 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+    .second-text p, .fourth-text p {
+        font-size: 1rem;
+        line-height: 1.5;
+        padding-bottom: 10px;
+        letter-spacing: 1.5px;
+    }
+
+    .third-text p {
+        font-size: 1rem;
+        line-height: 1.7;
+        padding-bottom: 10px;
+        letter-spacing: 1.5px;
+    }
+
+    .text-overlay {
+        margin: 130px 100px 0 -350px;
+        font-size: 1.3rem;
+    }
+
+    .second-text {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .third-text {
+        padding-left: 50px;
+        padding-right: 30px;
+    }
+
+    .fourth-text {
+        padding-right: 50px;
+        padding-left: 20px;
+    }
 }
 
 
@@ -1552,8 +1675,6 @@ button {
         height: auto;
     }
 
-    
-
 }
 
 @media screen and (max-width: 851px) {
@@ -1568,6 +1689,74 @@ button {
 
     .about-text, .features-text, .philosophy-text, .location-text {
         height: auto;
+    }
+
+    .second-image img, .third-image img, .fourth-image img {
+        width: 55vw;
+    }
+    
+}
+
+@media screen and (max-width: 857px) {
+    .first-image-container {
+        padding-left: 5%;
+    }
+    
+    .second-header {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .second-header h2 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .second-content, .third-content, .fourth-content {
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+    
+    .second-text h3, .third-text h3, .fourth-text h3 {
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+    }
+    
+    .second-text p, .fourth-text p {
+        font-size: 1rem;
+        line-height: 1.5;
+        padding-bottom: 10px;
+        letter-spacing: 1.5px;
+    }
+    
+    .third-text p {
+        font-size: 1rem;
+        line-height: 1.7;
+        padding-bottom: 10px;
+        letter-spacing: 1.5px;
+    }
+    
+    .text-overlay {
+        margin: 130px 300px 0 -100px;
+        font-size: 1.2rem;
+    }
+    
+    .second-text {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 0;
+    }
+    
+    .third-text {
+        padding-left: 30px;
+        padding-right: 20px;
+        padding-top: 0;
+    }
+    
+    .fourth-text {
+        padding-right: 50px;
+        padding-left: 20px;
+        padding-top: 0;
     }
     
 }
@@ -1923,6 +2112,129 @@ button {
     .footer-links {
         display: none; 
     }
+
+    .first-image-container {
+        margin-top: 90px;
+        padding-left: 5%;
+    }
+
+    .text-overlay {
+        margin: 200px 200px -100px -150px;
+        font-size: 1rem;
+    }
+    
+    .second-header {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .second-header h2 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 1.4rem;
+    }
+
+    .second-header img {
+        width: 30px;
+        height: 25px;
+    }
+    
+    .second-content, .third-content, .fourth-content {
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+
+    .second-image img, .third-image img, .fourth-image img {
+        width: 60vw;    
+ 
+    }
+    
+    .second-text h3, .third-text h3, .fourth-text h3 {
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+        letter-spacing: 2px;
+    }
+    
+    .second-text p, .fourth-text p {
+        font-size: .9rem;
+        line-height: 1.5;
+        padding-bottom: 10px;
+        letter-spacing: 1.5px;
+    }
+    
+    .third-text p {
+        font-size: .9rem;
+        line-height: 1.5;
+        padding-bottom: 15px;
+        letter-spacing: 1.5px;
+    }
+    
+    .second-text {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .third-text {
+        padding-left: 30px;
+        padding-right: 15px;
+    }
+    
+    .fourth-text {
+        padding-right: 30px;
+        padding-left: 15px;
+    }
+}
+
+@media (max-width: 700px) {
+    .first-image-container {
+        padding-left: 10%;
+        margin-right: -100px;
+    }
+
+    .text-overlay {
+        margin: 200px 200px 0 -150px;
+        font-size: 1rem;
+    }
+
+    .second-content, .third-content, .fourth-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .third-image {
+        margin: 0 auto;
+    }
+
+    .second-image img, .third-image img, .fourth-image img {
+        width: 80vw;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .second-text, .third-text, .fourth-text {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 697px) {
+    .text-overlay {
+        margin: 200px 200px 0 -150px;
+        font-weight: 600;
+        font-size: 0.9rem;
+    }
+
+    .second-content, .third-content, .fourth-content {
+        padding-bottom: 30px;
+        padding-top: 10px;
+    }
+
+    .second-text p, .third-text p, .fourth-text p {
+        font-size: .9rem;
+        line-height: 2;
+        letter-spacing: 1.5px;
+    }
 }
 
 @media screen and (max-width: 426px) {
@@ -2079,6 +2391,78 @@ button {
         width: 150px;
         height: auto;
     }
+
+    .first-content {
+        margin-bottom: 40px;
+    }
+
+    .second-content, .third-content, .fourth-content {
+        padding-bottom: 10px;
+        padding-top: 50px;
+    }
+
+    .first-image-container {
+        padding-left: 0;
+        margin-right: 0;
+    }
+
+    .first-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 0;  
+        margin: 0;         
+        padding: 0;
+    }
+
+    .text-overlay {
+        margin: 230px 0 0 0;
+        font-size: 1.2rem;
+        text-align: center;
+        animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+        0%, 100% { 
+            transform: translateY(0);
+        }
+        50% { 
+            transform: translateY(-8px); /* Adjust height of the bounce */
+        }
+    }
+
+    .second-header h2 {
+        display: flex;
+        flex-direction: column-reverse; 
+        align-items: center;
+        text-align: center;
+        gap: 10px; 
+    }
+
+    .second-header .icon {
+        margin-top: 10px; 
+        width: 30px; 
+        height: auto;
+    }
+
+    .second-image img, .third-image img, .fourth-image img {
+        width: 90vw;
+        margin: 0;
+    }
+
+    .second-text, .third-text, .fourth-text {
+        padding: 40px;
+    }
+
+    .second-text h3, .third-text h3, .fourth-text h3 {
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+    }
+
+    .second-text p, .third-text p, .fourth-text p {
+        font-size: .8rem;
+        line-height: 1.8rem;
+    }
+    
 }
 
 @media screen and (max-width: 376px) {
@@ -2251,9 +2635,81 @@ button {
         width: 150px;
         height: auto;
     }
+
+    .first-content {
+        margin-bottom: 30px;
+    }
+
+    .second-content, .third-content, .fourth-content {
+        padding-bottom: 10px;
+        padding-top: 30px;
+    }
+
+    .first-image-container {
+        padding-left: 0;
+        margin-right: 0;
+    }
+
+    .first-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 0;  
+        margin: 0;         
+        padding: 0;
+    }
+
+    .text-overlay {
+        margin: 220px 0 0 0;
+        font-size: 1rem;
+        text-align: center;
+        animation: bounce 1.5s infinite;
+    }
+
+    @keyframes bounce {
+        0%, 100% { 
+            transform: translateY(0);
+        }
+        50% { 
+            transform: translateY(-5px); /* Adjust height of the bounce */
+        }
+    }
+
+    .second-header h2 {
+        display: flex;
+        flex-direction: column-reverse; 
+        align-items: center;
+        text-align: center;
+        gap: 10px; 
+    }
+
+    .second-header .icon {
+        margin-top: 10px; 
+        width: 25px; 
+        height: auto;
+    }
+
+    .second-image img, .third-image img, .fourth-image img {
+        width: 90vw;
+        margin: 0;
+    }
+
+    .second-text, .third-text, .fourth-text {
+        padding: 25px;
+        padding-bottom: 10px;
+    }
+
+    .second-text h3, .third-text h3, .fourth-text h3 {
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+    }
+
+    .second-text p, .third-text p, .fourth-text p {
+        font-size: .8rem;
+        line-height: 1.8rem;
+    }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 321px) {
     .btn-contact, .btn-contact-section {
         padding: 4px 8px;
         width: 120px;
@@ -2386,5 +2842,56 @@ button {
         margin-top: 10px;
         display: flex;
         justify-content: center;
+    }
+
+    .text-overlay {
+        margin: 200px 0 0 0;
+        font-size: 1rem;
+        text-align: center;
+        animation: bounce 1.3s infinite;
+    }
+
+    @keyframes bounce {
+        0%, 100% { 
+            transform: translateY(0);
+        }
+        50% { 
+            transform: translateY(-5px); /* Adjust height of the bounce */
+        }
+    }
+
+    .second-header h2 {
+        gap: 5px; 
+    }
+
+    .second-header .icon {
+        margin-top: 10px; 
+        width: 20px; 
+        height: auto;
+    }
+
+    .first-content {
+        margin-bottom: 20px;
+    }
+
+    .second-content, .third-content, .fourth-content {
+        padding-bottom: 10px;
+        padding-top: 25px;
+    }
+
+    .second-text, .third-text, .fourth-text {
+        padding: 25px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    .second-text h3, .third-text h3, .fourth-text h3 {
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+    }
+
+    .second-text p, .third-text p, .fourth-text p {
+        font-size: .8rem;
+        line-height: 1.5rem;
     }
 }

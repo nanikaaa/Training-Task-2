@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Mirai School</title>
+    <link rel="stylesheet" href="./stylesheet.css">
+    <!-- Adobe Font Integration -->
+    <script> (function(d) { var config = { kitId: 'hyt8snp', scriptTimeout: 3000, async: true }, h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s) })(document); </script>
+
+</head>
+<body>
+<header>
+    <!-- Include Navbar -->
+    <div id="navbar-container"></div>
+</header>
+
+    <section class="first-content">   
+        <div class="first-image-container">
+             <img src="./images/first-content.jpg" 
+             alt="About Header Image">
+        </div>
+        <div class="text-overlay">
+            <h1>ミライスクールについて</h1>
+        </div>     
+
+    </section>
+
+    <section class="second-section">
+        <div class="second-container">
+            <div class="second-header">
+                <h2>ミライスクールについて 
+                    <img src="./images/about-icon.jpg" 
+                         alt="Building Icon" 
+                         class="icon">
+                </h2>
+            </div>
+    
+            <div class="second-content">
+                <div class="second-image">
+                    <img src="./images/second-content.jpg" alt="Teacher and Child">
+                </div>
+                <div class="second-text">
+                    <h3>個別療育と小集団療育を提供</h3>
+                    <p>
+                        ・1コマ45分の療育を提供しています。<br>
+                        ・スタッフの担当制を採用しています。<br>
+                        ・オーダーメイド式のプログラムを提供しています。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="about-divider"></div>
+    </section>
+
+    <section class="third-section ">
+        <div class="third-container">
+            <div class="third-content">
+                <div class="third-image">
+                    <img src="./images/third-content.jpg">
+                </div>
+                <div class="third-text ">
+                    <h3>専門職による療育を提供</h3>
+                    <p>
+                        多様な資格を持つスタッフが在籍しています。
+                    </p>
+                    <p>
+                        公認心理師、保育士、作業療法士など、各スタッフがそれぞれの専 <br>
+                        門知識を活かして子どもたちの支援に取り組んでいます。<br>
+                        担当制を採用していますが、全スタッフが日々のお子さんの様子や <br>
+                        情報を共有していますので、スタッフ一同でのサポート体制を整え <br>
+                        ています。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="about-divider"></div>
+    </section>
+
+    <section class="fourth-section">
+        <div class="fourth-container">
+            <div class="fourth-content">
+                <div class="fourth-image">
+                    <img src="./images/fourth-content.jpg">
+                </div>
+                <div class="fourth-text">
+                    <h3>個別支援計画のご提案と計画書作成のお手伝い</h3>
+                    <p>
+                        お子さんに合わせた療育計画をまとめた「個別支援計画」を作 <br>
+                        成いたします。<br>
+
+                    </p>
+                    <p>
+                        この計画は保護者様の承認を経て実施され、お子様の成長に合 <br>
+                        わせて6ヶ月ごとに見直しと更新いたします。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="contact-container">
+            <div class="contact-header">
+                <img src="./images/contact-icon.png" alt="Contact Icon">
+                <h2>Contact Us</h2>
+                <div class="contact-divider">
+                </div>
+                <p>その他、ご意見・お問い合わせはこちら。</p>
+                <button class="btn-contact-section">お問い合わせはこちら
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+        </section>
+    
+        <footer class="footer-section">
+        <div class="footer-container">
+                <div class="footer-logo-bg">
+                    <img src="./images/logo-no-bg.png" alt="MiraiSchool Logo"  onclick="location.href='./index.html'">
+                    <p class="footer-copyright">copyright</p> 
+                </div>
+            <div class="footer-links">
+                <a href="./about.html">ミライスクールについて</a>
+                <a href="./philosophy.html">経営理念</a>
+                <a href="./features.html">特徴</a>
+                <a href="./blog.html">ブログ</a>
+                <a href="./access.html">アクセス</a>
+                <a href="./contact.html">お問い合わせ</a>
+                <a href="./itemap.html">サイトマップ</a>
+                <a href="./privacy.html">プライバシーポリシー</a>
+            </div>
+        </div>
+        </footer>
+    
+<script>
+    fetch("./navbar.html") 
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("navbar-container").innerHTML = data;
+            loadNavbarScripts();
+        });
+</script>
+    <script src="../navbar.js"></script>
+</body>
+</html>
